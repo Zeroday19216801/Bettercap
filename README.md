@@ -23,8 +23,8 @@ You can install Bettercap on your system by following the instructions below.
 sudo apt update
 sudo apt install bettercap
 ```
-Performing MITM Attack
-Step 1: Start Bettercap
+## Performing MITM Attack
+### Step 1: Start Bettercap
 Once Bettercap is installed, open a terminal and run the following command:
 
 ```bash
@@ -32,7 +32,7 @@ sudo bettercap -i eth0
 ```
 Note: Replace eth0 with the network interface you're using. You can check your interfaces with ifconfig or ip a.
 This command will start Bettercap and set up your machine to monitor the network traffic.
-Step 2: Enable ARP Spoofing
+### Step 2: Enable ARP Spoofing
 To perform a MITM attack, you need to poison the ARP cache of the victim. This will trick the victim into thinking your machine is the router (or any other target). To enable ARP spoofing, use the following command:
 ```bash
 sudo bettercap -X -I eth0
